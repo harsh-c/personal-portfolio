@@ -25,15 +25,15 @@
       </p>
     <![endif]-->
     <!-- Header section -->
-    <header c;asser="1-header">
+    <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav__logo">Marlon</a>
+          <a href="#" class="nav__logo">Harsh</a>
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Home</a>
+              <a href="#" class="nav__link active">Home</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">About</a>
@@ -55,13 +55,56 @@
             </li>
           </ul>
         </div>
-        <div class="nav__toggle" id="nav_toggle">
+        <div class="nav__toggle" id="nav-toggle">
           <i class="bx bx-menu"></i>
         </div>
       </nav>
     </header>
 
-    <h1>This is my Personal PortFolio</h1>
+    <main class="l-main">
+      <!-- Home -->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi, <br />I'm <span class="home__title-color">Harsh</span>
+            <br />Software Engineer
+          </h1>
+          <a href="#" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a href="#" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="#" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+
+        <div class="home__img">
+          <img src="images/home.png" alt="" />
+        </div>
+      </section>
+
+      <!-- About me -->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="images/about.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="about__subtitle">I'm Harsh Chauhan</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              placeat cumque, nostrum adipisci sed veritatis tempora eius
+              repudiandae at omnis quisquam. Officiis amet dicta quidem esse
+              quis, nobis labore nulla.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!--JS Files-->
     <script src="https://unpkg.com/scrollreveal"></script>
