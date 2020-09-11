@@ -20,6 +20,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
     />
+    <!--JS Files-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js" async defer></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -32,30 +35,30 @@
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav__logo">Harsh</a>
+          <a href="#" class="nav__logo">Harsh Chauhan</a>
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link active">Home</a>
+              <a href="#home" class="nav__link active">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">About</a>
+              <a href="#about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Skills</a>
+              <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Work</a>
+              <a href="#experience" class="nav__link">Experience</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Education</a>
+              <a href="#education" class="nav__link">Education</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Projects</a>
+              <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -73,16 +76,20 @@
             Hi, <br />I'm <span class="home__title-color">Harsh</span>
             <br />Software Engineer
           </h1>
-          <a href="#" class="button">Contact</a>
+          <a href="#contact" class="button">Contact</a>
         </div>
 
         <div class="home__social">
           <a
             href="https://www.linkedin.com/in/harsh-chauhan/"
+            target="_blank"
             class="home__social-icon"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="https://www.github.com/harsh-c" class="home__social-icon"
+          <a
+            href="https://www.github.com/harsh-c"
+            class="home__social-icon"
+            target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
         </div>
@@ -96,11 +103,10 @@
       <section class="about section" id="about">
         <h2 class="section-title">About</h2>
         <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="images/about.jpg" alt="" />
-          </div>
           <div>
             <h2 class="about__subtitle">I'm Harsh Chauhan</h2>
+          </div>
+          <div>
             <p class="about__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
               placeat cumque, nostrum adipisci sed veritatis tempora eius
@@ -111,73 +117,194 @@
         </div>
       </section>
       <!-- Skills -->
-      <section class="skills section" id="skills"></section>
-      <h2 class="section-title">Skills</h2>
-      <div class="skills__container bd-grid">
-        <h2 class="skills__subtitle">Professional Skills</h2>
-        <p class="skills__text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Necessitatibus perspiciatis dolores voluptas esse, maxime voluptatibus
-          aperiam nisi, ratione animi expedita veniam doloribus nihil, earum
-          laudantium consequuntur rerum cum? Aut, id!
-        </p>
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__container bd-grid">
+          <h2 class="skills__subtitle">Professional Skills</h2>
+          <p class="skills__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Necessitatibus perspiciatis dolores voluptas esse, maxime
+            voluptatibus aperiam nisi, ratione animi expedita veniam doloribus
+            nihil, earum laudantium consequuntur rerum cum? Aut, id!
+          </p>
 
-        <!-- C# -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="devicon-csharp-plain skills__icon"></i>
-            <span class="skills__name">C#</span>
+          <!-- C# -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="devicon-csharp-plain skills__icon"></i>
+              <span class="skills__name">C#</span>
+            </div>
+            <div class="skills__bar skills__csharp"></div>
+            <div>
+              <span class="skills__percentage">70%</span>
+            </div>
           </div>
-          <div>
-            <span class="skills__percentage">70%</span>
-          </div>
-          <div class="skills__bar skills__js"></div>
-        </div>
 
-        <!-- HTML -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="bx bxl-html5 skills__icon"></i>
-            <span class="skills__name">HTML</span>
+          <!-- Java -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="devicon-java-plain skills__icon"></i>
+              <span class="skills__name">Java</span>
+            </div>
+            <div class="skills__bar skills__java"></div>
+            <div>
+              <span class="skills__percentage">80%</span>
+            </div>
           </div>
-          <div>
-            <span class="skills__percentage">80%</span>
-          </div>
-          <div class="skills__bar skills__html"></div>
-        </div>
 
-        <!-- CSS -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="bx bxl-css3 skills__icon"></i>
-            <span class="skills__name">CSS</span>
+          <!-- HTML -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-html5 skills__icon"></i>
+              <span class="skills__name">HTML</span>
+            </div>
+            <div class="skills__bar skills__html"></div>
+            <div>
+              <span class="skills__percentage">65%</span>
+            </div>
           </div>
-          <div>
-            <span class="skills__percentage">50%</span>
-          </div>
-          <div class="skills__bar skills__css"></div>
-        </div>
 
-        <!-- JS -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class="bx bxl-javascript skills__icon"></i>
-            <span class="skills__name">JAVASCRIPT</span>
+          <!-- CSS -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-css3 skills__icon"></i>
+              <span class="skills__name">CSS</span>
+            </div>
+            <div class="skills__bar skills__css"></div>
+            <div>
+              <span class="skills__percentage">50%</span>
+            </div>
           </div>
-          <div>
-            <span class="skills__percentage">60%</span>
-          </div>
-          <div class="skills__bar skills__js"></div>
-        </div>
 
-        <div>
-          <img src="images/work3.jpg" alt="" class="skills__img" />
+          <!-- JS -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__name">JAVASCRIPT</span>
+            </div>
+            <div class="skills__bar skills__js"></div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+          </div>
+
+          <!-- <div>
+            <img src="images/work3.jpg" alt="" class="skills__img" />
+          </div> -->
         </div>
-      </div>
+      </section>
+
+      <!-- Work -->
+      <section class="work section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="work__container bd-grid">
+          <div class="timeline">
+            <ul>
+              <li class="date" data-date="01/2020 - present">
+                <h2>California State University, Fullerton</h2>
+                <h3>Master's in Software Engineering</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  deserunt non vero, omnis, sint repudiandae, obcaecati a
+                  commodi deleniti tempora aut praesentium laborum sequi! Est
+                  dolor provident hic id perspiciatis.
+                </p>
+              </li>
+              <li class="date" data-date="11/2017 - 07/2019">
+                <h2>Tesla</h2>
+                <h3>Software Engineer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  deserunt non vero, omnis, sint repudiandae, obcaecati a
+                  commodi deleniti tempora aut praesentium laborum sequi! Est
+                  dolor provident hic id perspiciatis.
+                </p>
+              </li>
+              <li class="date" data-date="08/2016 - 11/2017">
+                <h2>Syncplicity</h2>
+                <h3>Software Engineering Intern</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore libero, ratione nesciunt vitae temporibus iusto
+                  beatae explicabo aperiam rem maxime, adipisci amet dolores
+                  iste? Beatae voluptas deserunt consectetur aliquam itaque.
+                </p>
+              </li>
+              <li class="date" data-date="08/2015 - 05/2016">
+                <h2>California State University, Fresno</h2>
+                <h3>Bachelor's in Computer Science</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Animi nisi officia nobis facere, sed magni architecto
+                  delectus, labore rem explicabo in facilis harum debitis
+                  pariatur dolor praesentium nemo! Eveniet, ipsum?
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="work section" id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="work section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact__container bd-grid">
+          <div class="work__img">
+            <form action="" class="contact__form">
+              <input type="text" placeholder="Name" class="contact__input" />
+              <input type="mail" placeholder="Email" class="contact__input" />
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="10"
+                class="contact__input"
+              ></textarea>
+              <input
+                type="button"
+                value="Submit"
+                class="contact__button button"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!--JS Files-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/main.js" async defer></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__title">Harsh</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"
+          ><i class="bx bxl-facebook-square"></i
+        ></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+        <p>&#169; 2020 All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
