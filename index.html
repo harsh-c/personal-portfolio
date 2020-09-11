@@ -20,6 +20,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
     />
+    <!--JS Files-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js" async defer></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -46,7 +49,7 @@
               <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
+              <a href="#experience" class="nav__link">Experience</a>
             </li>
             <li class="nav__item">
               <a href="#education" class="nav__link">Education</a>
@@ -73,16 +76,20 @@
             Hi, <br />I'm <span class="home__title-color">Harsh</span>
             <br />Software Engineer
           </h1>
-          <a href="#" class="button">Contact</a>
+          <a href="#contact" class="button">Contact</a>
         </div>
 
         <div class="home__social">
           <a
             href="https://www.linkedin.com/in/harsh-chauhan/"
+            target="_blank"
             class="home__social-icon"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="https://www.github.com/harsh-c" class="home__social-icon"
+          <a
+            href="https://www.github.com/harsh-c"
+            class="home__social-icon"
+            target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
         </div>
@@ -96,11 +103,10 @@
       <section class="about section" id="about">
         <h2 class="section-title">About</h2>
         <div class="about__container bd-grid">
-          <!-- <div class="about__img">
-            <img src="images/about.jpg" alt="" />
-          </div> -->
           <div>
             <h2 class="about__subtitle">I'm Harsh Chauhan</h2>
+          </div>
+          <div>
             <p class="about__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
               placeat cumque, nostrum adipisci sed veritatis tempora eius
@@ -128,10 +134,10 @@
               <i class="devicon-csharp-plain skills__icon"></i>
               <span class="skills__name">C#</span>
             </div>
+            <div class="skills__bar skills__csharp"></div>
             <div>
               <span class="skills__percentage">70%</span>
             </div>
-            <div class="skills__bar skills__csharp"></div>
           </div>
 
           <!-- Java -->
@@ -140,10 +146,10 @@
               <i class="devicon-java-plain skills__icon"></i>
               <span class="skills__name">Java</span>
             </div>
+            <div class="skills__bar skills__java"></div>
             <div>
               <span class="skills__percentage">80%</span>
             </div>
-            <div class="skills__bar skills__java"></div>
           </div>
 
           <!-- HTML -->
@@ -152,10 +158,10 @@
               <i class="bx bxl-html5 skills__icon"></i>
               <span class="skills__name">HTML</span>
             </div>
+            <div class="skills__bar skills__html"></div>
             <div>
               <span class="skills__percentage">65%</span>
             </div>
-            <div class="skills__bar skills__html"></div>
           </div>
 
           <!-- CSS -->
@@ -164,10 +170,10 @@
               <i class="bx bxl-css3 skills__icon"></i>
               <span class="skills__name">CSS</span>
             </div>
+            <div class="skills__bar skills__css"></div>
             <div>
               <span class="skills__percentage">50%</span>
             </div>
-            <div class="skills__bar skills__css"></div>
           </div>
 
           <!-- JS -->
@@ -176,10 +182,10 @@
               <i class="bx bxl-javascript skills__icon"></i>
               <span class="skills__name">JAVASCRIPT</span>
             </div>
+            <div class="skills__bar skills__js"></div>
             <div>
               <span class="skills__percentage">60%</span>
             </div>
-            <div class="skills__bar skills__js"></div>
           </div>
 
           <!-- <div>
@@ -189,12 +195,52 @@
       </section>
 
       <!-- Work -->
-      <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
-
+      <section class="work section" id="experience">
+        <h2 class="section-title">Experience</h2>
         <div class="work__container bd-grid">
-          <div class="work__img">
-            <img src="" alt="" />
+          <div class="timeline">
+            <ul>
+              <li class="date" data-date="01/2020 - present">
+                <h2>California State University, Fullerton</h2>
+                <h3>Master's in Software Engineering</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  deserunt non vero, omnis, sint repudiandae, obcaecati a
+                  commodi deleniti tempora aut praesentium laborum sequi! Est
+                  dolor provident hic id perspiciatis.
+                </p>
+              </li>
+              <li class="date" data-date="11/2017 - 07/2019">
+                <h2>Tesla</h2>
+                <h3>Software Engineer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  deserunt non vero, omnis, sint repudiandae, obcaecati a
+                  commodi deleniti tempora aut praesentium laborum sequi! Est
+                  dolor provident hic id perspiciatis.
+                </p>
+              </li>
+              <li class="date" data-date="08/2016 - 11/2017">
+                <h2>Syncplicity</h2>
+                <h3>Software Engineering Intern</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore libero, ratione nesciunt vitae temporibus iusto
+                  beatae explicabo aperiam rem maxime, adipisci amet dolores
+                  iste? Beatae voluptas deserunt consectetur aliquam itaque.
+                </p>
+              </li>
+              <li class="date" data-date="08/2015 - 05/2016">
+                <h2>California State University, Fresno</h2>
+                <h3>Bachelor's in Computer Science</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Animi nisi officia nobis facere, sed magni architecto
+                  delectus, labore rem explicabo in facilis harum debitis
+                  pariatur dolor praesentium nemo! Eveniet, ipsum?
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -260,9 +306,5 @@
         <p>&#169; 2020 All Rights Reserved</p>
       </div>
     </footer>
-
-    <!--JS Files-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/main.js" async defer></script>
   </body>
 </html>
